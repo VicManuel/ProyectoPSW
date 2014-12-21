@@ -6,6 +6,13 @@
 a {
 	text-decoration: none;
 }
+.imgquienessomos{
+	width:200px;
+	height: 178px;
+	border-radius:20px; 
+	
+}
+
 #sidebar{
 	background: #1A1A1A;
 	width: 250px;
