@@ -18,7 +18,7 @@ body{
 }
 
 .container {
-    background: url("../img/robot.png") no-repeat scroll 90px 35px rgba(255, 255, 255, 0.6);
+    background: url("../imge/robot.png") no-repeat scroll 90px 35px rgba(255, 255, 255, 0.6);
     border: 1px solid #FFFFFF;
     height:400px;
     margin:20px auto;
