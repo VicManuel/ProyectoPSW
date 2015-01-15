@@ -952,13 +952,13 @@ a.btn-u-xs {
 }
 
 /*For FF Only*/
-@-moz-document url-prefix() { 
+@document url-prefix() { 
    .footer-subsribe .btn-u {
       padding-bottom: 4px;
    }
 }
 @media (max-width: 768px) { 
-   @-moz-document url-prefix() { 
+   @document url-prefix() { 
       .btn-u {
          padding-bottom: 6px;
       }
@@ -1691,22 +1691,7 @@ i.icon-4x.icon-line {
   color: #fff !important;
 }
 
-/*Icons Color*/
-i.icon-color-u,
-i.icon-color-red,
-i.icon-color-sea,
-i.icon-color-dark,
-i.icon-color-grey,
-i.icon-color-blue,
-i.icon-color-green,
-i.icon-color-yellow,
-i.icon-color-orange,
-i.icon-color-purple,
-i.icon-color-aqua,
-i.icon-color-brown,
-i.icon-color-dark-blue,
-i.icon-color-light-grey,
-i.icon-color-light-green, {
+ {
   background: none;
 }
 
@@ -2570,7 +2555,7 @@ blockquote.hero.hero-default small {
   text-align: right;
   text-shadow: none;
   position: absolute;
-  filter: Alpha(opacity = 100); /*For IE*/
+  filter: Alpha(opacity=100); /*For IE*/
 }
 
 .testimonials .carousel-control.left {
