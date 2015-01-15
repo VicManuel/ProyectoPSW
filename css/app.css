@@ -600,9 +600,9 @@ h3.title-v3-xs {
 
 .carousel-v2 .carousel-control:hover {
   background: rgba(0,0,0,0.3);
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;    
 }
 
@@ -762,7 +762,7 @@ h3.title-v3-xs {
 .pagination li a:hover {
    color: #fff;
    background: #5fb611;
-   border-color: #5fb611;   
+   border-color: #5fb612;   
 }
 
 .pagination > .active > a, 
@@ -772,7 +772,7 @@ h3.title-v3-xs {
 .pagination > .active > a:focus, 
 .pagination > .active > span:focus {
    border-color: #72c02c;
-   background-color: #72c02c;
+   background-color: #72c05c;
 }
 
 /*Pagination Without Space*/
@@ -903,9 +903,9 @@ h3.title-v3-xs {
 .btn-u:hover {
   color: #fff;
   text-decoration: none;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1180,9 +1180,9 @@ a.btn-u-xs {
   background: none;
   padding: 5px 13px;
   border: solid 1px transparent;
-   -webkit-transition: all 0.1s ease-in-out;
-   -moz-transition: all 0.1s ease-in-out;
-   -o-transition: all 0.1s ease-in-out;
+ transition: all 0.1s ease-in-out;
+   transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
    transition: all 0.1s ease-in-out;   
 }
 .btn-u.btn-brd:hover {
@@ -1518,9 +1518,9 @@ span.badge-dark {
   color: #555;
   border-color: #555;
   text-decoration: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;     
 }
 
@@ -1547,10 +1547,10 @@ span.badge-dark {
    background-position: 0 0;
    background-repeat: no-repeat;
    transition: all 0.3s ease-in-out;
-   -o-transition: all 0.3s ease-in-out;
-   -ms-transition: all 0.3s ease-in-out;
-   -moz-transition: all 0.3s ease-in-out;
-   -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+ transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
 }
 
 .social-icons li:hover a {
@@ -2008,9 +2008,9 @@ i.icon-bg-light-grey {
 
 .content-boxes-v6:hover i,
 .content-boxes-v6:hover i:after {
-  -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -2109,9 +2109,9 @@ i.icon-bg-light-grey {
   padding: 15px 20px;
   margin-bottom: 25px;
   background: #f7f7f7;
-  -webkit-transition:all 0.3s ease-in-out;
-  -moz-transition:all 0.3s ease-in-out;
-  -o-transition:all 0.3s ease-in-out;
+  transition:all 0.3s ease-in-out;
+ transition:all 0.3s ease-in-out;
+ transition:all 0.3s ease-in-out;
   transition:all 0.3s ease-in-out;
 }
 
@@ -2378,9 +2378,9 @@ blockquote.hero.text-right:hover {
 blockquote:hover,
 blockquote.text-right:hover {
   border-color: #72c02c;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
+ transition: all 0.4s ease-in-out;
+ transition: all 0.4s ease-in-out;
+ transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
@@ -2994,9 +2994,9 @@ img.image-md {
   line-height: 32px;
   border: solid 2px #eee;
   border-radius: 20px !important;
-   -webkit-transition: all 0.2s ease-in-out;
-   -moz-transition: all 0.2s ease-in-out;
-   -o-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
    transition: all 0.2s ease-in-out;  
 }
 
@@ -3300,25 +3300,25 @@ img.image-md {
 
 /*CSS3 Hover Effects*/
 .hover-effect {
-   -webkit-transition: all 0.4s ease-in-out;
-   -moz-transition: all 0.4s ease-in-out;
-   -o-transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out;
    transition: all 0.4s ease-in-out;
 }
 .hover-effect-kenburn {
    left:10px;
    margin-left:-10px;
    position:relative;
-   -webkit-transition: all 0.8s ease-in-out;
-   -moz-transition: all 0.8s ease-in-out;
-   -o-transition: all 0.8s ease-in-out;
-   -ms-transition: all 0.8s ease-in-out;
+   transition: all 0.8s ease-in-out;
+   transition: all 0.8s ease-in-out;
+   transition: all 0.8s ease-in-out;
+   transition: all 0.8s ease-in-out;
    transition: all 0.8s ease-in-out;
 }
 .hover-effect-kenburn:hover {
-   -webkit-transform: scale(2) rotate(5deg);
-   -moz-transform: scale(2) rotate(5deg);
-   -o-transform: scale(2) rotate(5deg);
-   -ms-transform: scale(2) rotate(5deg);
+   transform: scale(2) rotate(5deg);
+   transform: scale(2) rotate(5deg);
+   transform: scale(2) rotate(5deg);
+   transform: scale(2) rotate(5deg);
    transform: scale(2) rotate(5deg);
 }
