@@ -1,7 +1,7 @@
 <?php
 
 include_once('Rutina.php');
-include_once('Collector.php');
+include_once('../Collector.php');
 
 class RutinaCollector extends Collector
 {

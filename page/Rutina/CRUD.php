@@ -53,6 +53,6 @@ if($accion=="Eliminar")
     
 }
 ?>
-<div><a href="CRUD_INSTRUCTOR/frmRutina.php">Volver a la Página de Registros</a></div>
+<div><a href="../Mantenimientos.php">Volver a la Página de Registros</a></div>
 </body>
 </html>
