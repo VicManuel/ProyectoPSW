@@ -2,20 +2,21 @@
 <head>
 </head>
 <?php
-include_once("DemoCollector.php");
-$DemoCollectorObj = new DemoCollector();
+include_once("RutinaPorHorarioCollector.php");
+$RutinaPorHorarioCollectorObj = new RutinaPorHorarioCollector();
 ?>
 <body>
 <div id="main">
 <table>
-<tr><td><a href="formularioDemoInsert.php">Nuevo</a></td></tr>
+<tr><td><a href="formularioRutinaPorHorarioInsert.php">Nuevo</a></td></tr>
 <?php
-foreach ($DemoCollectorObj->readDemos() as $c){
+foreach ($RutinaPorHorarioCollectorObj->readRutinaPorHorarios() as $c){
   echo "<tr>";
-  echo "<td>".$c->getIdDemo() ."</td>";
-  echo "<td>".$c->getNombre()."</td>";
-  echo "<td><a href='formularioDemoEditar.php?id=".$c->getIdDemo()."'>editar</a></td>";
-  echo "<td><a href='eliminar.php?id=".$c->getIdDemo()."'>eliminar</a></td>"; 
+  echo "<td>".$c->getIdRutinaPorHorario() ."</td>";
+  echo "<td>".$c->getIdRutina() ."</td>";
+  echo "<td>".$c->getIdHorario() ."</td>";
+  echo "<td><a href='formularioRutinaPorHorarioEditar.php?id=".$c->getIdRutinaPorHorario()."'>editar</a></td>";
+  echo "<td><a href='eliminar.php?id=".$c->getIdRutinaPorHorario()."'>eliminar</a></td>"; 
   echo "</tr>"; 
 }
 ?>

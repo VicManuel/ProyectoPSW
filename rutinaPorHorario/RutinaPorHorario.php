@@ -1,8 +1,8 @@
 <?php
 
-class Demo
+class RutinaPorHorario
 {
-    private $idDemo;
+    private $idRutinaPorHorario;
     private $nombre;
     
      function __construct($idDemo, $nombre) {
