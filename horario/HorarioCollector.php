@@ -26,12 +26,12 @@ class HorarioCollector extends Collector
     return $arrayHorario;        
   }
   
-  function updateDemo($id,$horarioInicio,$horarioFin) {    
-    $insertrow = self::$db->updateRow("UPDATE DB_Erick.horario SET horario.horarioInicio = ?  WHERE horario.idHorario = ? ", array( "{$nombre}",$id));
+  function updateHorario($id,$horarioInicio,$horarioFin) {    
+    $insertrow = self::$db->updateRow("UPDATE DB_Erick.horario SET horario.horarioInicio = ? horario.horarioFin = ?  WHERE horario.idHorario = ? ", array( "{$horarioInicio}", "{$horarioFin}", $id));
   }  
 
-  function deleteDemo($id) {    
-    $deleterow = self::$db->deleteRow("DELETE FROM clasedb.demo WHERE iddemo= ?", array("{$id}"));
+  function deleteHorario($id) {    
+    $deleterow = self::$db->deleteRow("DELETE FROM DB_Erick.horario WHERE idHorario= ?", array("{$id}"));
   }  
 
 

@@ -5,16 +5,17 @@
 <body>
 <div id="main">
 <?php
-$nombre=$_POST["nombre"];
-$iddemo=$_POST["iddemo"];
+$horarioInicio=$_POST["horarioInicio"];
+$horarioFin=$_POST["horarioFin"];
+$idHorario=$_POST["idHorario"];
 
 echo "Edici&oacute;n en proceso ....  </br>";
 
-include_once("DemoCollector.php");
-$DemoCollectorObj = new DemoCollector();
-$DemoCollectorObj->updateDemo($iddemo,$nombre);
+include_once("HorarioCollector.php");
+$HorarioCollectorObj = new HorarioCollector();
+$HorarioCollectorObj->updateHorario($idHorario,$horarioInicio,$horarioFin);
 
-echo "id :".$iddemo." actualizado a:".$nombre." </br>";
+echo "id :".$idHorario." actualizado a:".$horarioInicio." ".$horarioFin." </br>";
 ?>
 <div><a href="index.php">Volver al Inicio</a></div>
 </div>

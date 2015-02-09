@@ -2,12 +2,15 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>formulario Demo</title>
+<title>formulario Horario</title>
 </head>
 <body>
 <form action="insert.php" method="post" >
 <p>
-Nombre: <input type="text" name="nombre" autofocus required />
+HorarioInicio <input type="text" name="horarioInicio" autofocus required />
+</p>
+<p>
+HorarioFin <input type="text" name="horarioFin" autofocus required />
 </p>
 <input type="submit" value="Submit!" />
 
