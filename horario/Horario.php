@@ -1,27 +1,35 @@
 <?php
 
-class Demo
+class Horario
 {
-    private $idDemo;
-    private $nombre;
-    
-     function __construct($idDemo, $nombre) {
-       $this->idDemo = $idDemo;
-       $this->nombre = $nombre;
+    private $idHorario;
+    private $horarioInicio;
+    private $horarioFin;
+
+     function __construct($idHorario, $horarioInicio, $horarioFin) {
+       $this->idHorario = $idHorario;
+       $this->horarioInicio = $horarioInicio;
+       $this->horarioFin = $horarioFin;
      }
     
-     function setIdDemo($idDemo){
-       $this->idDemo = $idDemo;
+     function setIdHorario($idHorario){
+       $this->idHorario = $idHorario;
      } 
-     function getIdDemo(){
-       return $this->idDemo;
+     function getIdHorario(){
+       return $this->idHorario;
      } 
-     function setNombre($nombre){
-       $this->nombre = $nombre;
+     function setHorarioInicio($horarioInicio){
+       $this->horarioInicio = $horarioInicio;
      } 
-     function getNombre(){
-       return $this->nombre;
+     function getHorarioInicio(){
+       return $this->horarioInicio;
      } 
+     function setHorarioFin($horarioFin){
+       $this->horarioFin = $horarioFin;
+     }
+     function getHorarioFin(){
+       return $this->horarioFin;
+     }
 }
 
 ?> 

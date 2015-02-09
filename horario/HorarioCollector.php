@@ -1,15 +1,15 @@
 <?php
 
-include_once('Demo.php');
+include_once('Horario.php');
 include_once('Collector.php');
 
-class DemoCollector extends Collector
+class HorarioCollector extends Collector
 {
   
-  function showDemo($id) {
-    $row = self::$db->getRows("SELECT * FROM demo where iddemo= ? ", array("{$id}")); 
-    $ObjDemo = new Demo($row[0]{'iddemo'},$row[0]{'nombre'});
-    return $ObjDemo;
+  function showHorario($id) {
+    $row = self::$db->getRows("SELECT * FROM horario where idHorario= ? ", array("{$id}")); 
+    $ObjHorario = new Horario($row[0]{'idHorario'},$row[0]{'horarioInicio'},$row[0]{'horarioFin'});
+    return $ObjHorario;
   }
 
   function createDemo($nombre) {    
