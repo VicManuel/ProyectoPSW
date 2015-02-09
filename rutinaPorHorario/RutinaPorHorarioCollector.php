@@ -1,37 +1,37 @@
 <?php
 
-include_once('Demo.php');
+include_once('RutinaPorHorario.php');
 include_once('Collector.php');
 
-class DemoCollector extends Collector
+class RutinaPorHorarioCollector extends Collector
 {
   
-  function showDemo($id) {
-    $row = self::$db->getRows("SELECT * FROM demo where iddemo= ? ", array("{$id}")); 
-    $ObjDemo = new Demo($row[0]{'iddemo'},$row[0]{'nombre'});
-    return $ObjDemo;
+  function showRutinaPorHorario($id) {
+    $row = self::$db->getRows("SELECT * FROM rutinaPorHorario where idRutinaPorHorario= ? ", array("{$id}")); 
+    $ObjRutinaPorHorario = new RutinaPorHorario($row[0]{'idRutinaPorHorario'},$row[0]{'idRutina'},$row[0]{'idHorario'});
+    return $ObjRutinaPorHorario;
   }
 
-  function createDemo($nombre) {    
-    $insertrow = self::$db->insertRow("INSERT INTO clasedb.demo (iddemo, nombre) VALUES (?, ?)", array(null, "{$nombre}"));
+  function createRutinaPorHorario($idRutina,$idHorario) {    
+    $insertrow = self::$db->insertRow("INSERT INTO wodhard.rutinaPorHorario (idRutinaPorHorario, idRutina, idHorario) VALUES (?, ?, ?)", array(null, "{$idRutina}", "{$idHorario}"));
   }  
 
-  function readDemos() {
-    $rows = self::$db->getRows("SELECT * FROM demo ");        
-    $arrayDemo= array();        
+  function readRutinaPorHorarios() {
+    $rows = self::$db->getRows("SELECT * FROM rutinaPorHorario ");        
+    $arrayRutinaPorHorario= array();        
     foreach ($rows as $c){
-      $aux = new Demo($c{'iddemo'},$c{'nombre'});
-      array_push($arrayDemo, $aux);
+      $aux = new RutinaPorHorario($c{'idRutinaPorHorario'},$c{'idRutina'},$c{'idHorario'});
+      array_push($arrayRutinaPorHorario, $aux);
     }
-    return $arrayDemo;        
+    return $arrayRutinaPorHorario;        
   }
   
-  function updateDemo($id,$nombre) {    
-    $insertrow = self::$db->updateRow("UPDATE clasedb.demo SET demo.nombre = ?  WHERE demo.iddemo = ? ", array( "{$nombre}",$id));
+  function updateDemo($id,$idRutina,$idHorario) {    
+    $insertrow = self::$db->updateRow("UPDATE wodhard.rutinaPorHorario SET rutinaPorHorario.idRutina = ? rutinaPorHorario.idHorario = ?  WHERE rutinaPorHorario.idRutinaPorHorario = ? ", array( "{$idRutina}","{$idHorario}",$id));
   }  
 
-  function deleteDemo($id) {    
-    $deleterow = self::$db->deleteRow("DELETE FROM clasedb.demo WHERE iddemo= ?", array("{$id}"));
+  function deleteRutinaPorHorario($id) {    
+    $deleterow = self::$db->deleteRow("DELETE FROM wodhard.rutinaPorHorario WHERE idRutinaPorHorario= ?", array("{$id}"));
   }  
 
 

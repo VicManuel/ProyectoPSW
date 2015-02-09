@@ -3,25 +3,33 @@
 class RutinaPorHorario
 {
     private $idRutinaPorHorario;
-    private $nombre;
-    
-     function __construct($idDemo, $nombre) {
-       $this->idDemo = $idDemo;
-       $this->nombre = $nombre;
+    private $idRutina;
+    private $idHorario;
+
+     function __construct($idRutinaPorHorario, $idRutina, $idHorario) {
+       $this->idRutinaPorHorario = $idRutinaPorHorario;
+       $this->idRutina = $idRutina;
+       $this->idHorario = $idHorario;
      }
-    
-     function setIdDemo($idDemo){
-       $this->idDemo = $idDemo;
+
+     function setIdRutinaPorHorario($idRutinaPorHorario){
+       $this->idRutinaPorHorario = $idRutinaPorHorario;
+     }
+     function getIdRutinaPorHorario(){
+       return $this->idRutinaPorHorario;
+     }
+     function setIdRutina($idRutina){
+       $this->idRutina = $idRutina;
      } 
-     function getIdDemo(){
-       return $this->idDemo;
+     function getIdRutina(){
+       return $this->idRutina;
      } 
-     function setNombre($nombre){
-       $this->nombre = $nombre;
+     function setIdHorario($idHorario){
+       $this->idHorario = $idHorario;
      } 
-     function getNombre(){
-       return $this->nombre;
+     function getIdHorario(){
+       return $this->idHorario;
      } 
 }
 
-?> 
+?>

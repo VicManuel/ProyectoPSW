@@ -5,14 +5,15 @@
 <body>
 <div id="main">
 <?php
-$valor=$_POST["nombre"];
+$valor1=$_POST["idRutina"];
+$valor2=$_POST["idHorario"];
 //$valor="manuel";
-echo 'Hola ' . htmlspecialchars($valor) . '!';
+echo 'Hola ' . htmlspecialchars($valor1,$valor2) . '!';
 
-include_once("DemoCollector.php");
+include_once("RutinaPorHorarioCollector.php");
 
-$DemoCollectorObj = new DemoCollector();
-$DemoCollectorObj->createDemo($valor);
+$RutinaPorHorarioCollectorObj = new RutinaPorHorarioCollector();
+$RutinaPorHorarioCollectorObj->createRutinaPorHorario($valor1,$valor2);
 
 echo "valor agregado </br>";
 ?>
