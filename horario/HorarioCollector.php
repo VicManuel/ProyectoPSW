@@ -12,22 +12,22 @@ class HorarioCollector extends Collector
     return $ObjHorario;
   }
 
-  function createDemo($nombre) {    
-    $insertrow = self::$db->insertRow("INSERT INTO clasedb.demo (iddemo, nombre) VALUES (?, ?)", array(null, "{$nombre}"));
+  function createHorario($horarioInicio,$horarioFin) {    
+    $insertrow = self::$db->insertRow("INSERT INTO DB_Erick.horario (idHorario, horarioInicio, horarioFin) VALUES (?, ?, ?)", array(null, "{$horarioInicio}", "{horarioFin}"));
   }  
 
-  function readDemos() {
-    $rows = self::$db->getRows("SELECT * FROM demo ");        
-    $arrayDemo= array();        
+  function readHorarios() {
+    $rows = self::$db->getRows("SELECT * FROM horario ");        
+    $arrayHorario= array();        
     foreach ($rows as $c){
-      $aux = new Demo($c{'iddemo'},$c{'nombre'});
-      array_push($arrayDemo, $aux);
+      $aux = new Horario($c{'idHorario'},$c{'horarioInicio'},$c{'horarioFin'});
+      array_push($arrayHorario, $aux);
     }
-    return $arrayDemo;        
+    return $arrayHorario;        
   }
   
-  function updateDemo($id,$nombre) {    
-    $insertrow = self::$db->updateRow("UPDATE clasedb.demo SET demo.nombre = ?  WHERE demo.iddemo = ? ", array( "{$nombre}",$id));
+  function updateDemo($id,$horarioInicio,$horarioFin) {    
+    $insertrow = self::$db->updateRow("UPDATE DB_Erick.horario SET horario.horarioInicio = ?  WHERE horario.idHorario = ? ", array( "{$nombre}",$id));
   }  
 
   function deleteDemo($id) {    
