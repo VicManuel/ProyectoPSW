@@ -2,13 +2,17 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>formulario Demo</title>
+<title>formulario RutinaPorHorario</title>
 </head>
 <body>
 <form action="insert.php" method="post" >
 <p>
-Nombre: <input type="text" name="nombre" autofocus required />
+IdRutina: <input type="text" name="idRutina" autofocus required />
 </p>
+<p>
+IdHorario: <input type="text" name="idHorario" autofocus required />
+</p>
+
 <input type="submit" value="Submit!" />
 
 </form>
