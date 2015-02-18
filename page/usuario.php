@@ -3,56 +3,58 @@
 class Usuario
 {
     private $idUsuario;
-    private $nombre;
-    private $apellido;
-    private $edad;
-	private $idTelefono;
+    private $admin;
+    private $passadmin;
+    private $user;
+    private $passuser;
+    private $correo;
     
-
-    
-     function __construct($idUsuario, $nombre, $apellido, $edad, $idTelefono) {
-       $this->idUsuario = $idUsuario;
-	   $this->nombre = $nombre;
-       $this->apellido = $apellido;
-       $this->edad = $edad;
-	   $this->idTelefono = $idTelefono;
+     function __construct($idUsuario, $admin, $passadmin, $user, $passuser, $correo) {
+       $this->idusuario = $idUsuario;
+       $this->admin = $admin;
+       $this->passadmin = $passadmin;
+       $this->user = $user;
+       $this->passuser = $passuser;
+       $this->correo = $correo;
      }
-	 
-	 function setIdUsuario($idUsuario){
+    
+     function setidUsuario($idUsuario){
        $this->idUsuario = $idUsuario;
      } 
-     function getIdUsuario(){
+     function getidUsuario(){
        return $this->idUsuario;
-     }
-    
-     function setNombre($nombre){
-       $this->nombre = $nombre;
      } 
-     function getNombre(){
-       return $this->nombre;
+     function setadmin($admin){
+       $this->admin = $admin;
      } 
-	 
-	 function setApellido($apellido){
-       $this->apellido = $apellido;
+     function getadmin(){
+       return $this->admin;
      } 
-     function getApellido(){
-       return $this->apellido;
+     function setpassadmin($passadmin){
+       $this->passadmin = $passadmin;
      } 
-	 
-	 function setEdad($edad){
-       $this->edad = $edad;
+     function getpassadmin(){
+       return $this->passadmin;
      } 
-     function getEdad(){
-       return $this->edad;
-     }
-    
-    function setIdTelefono($idTelefono){
-       $this->idTelefono = $idTelefono;
+     function setuser($user){
+       $this->user = $user;
      } 
-     function getIdTelefono(){
-       return $this->idTelefono;
-     }	
-	 
+     function getuser(){
+       return $this->user;
+     } 
+     function setpassuser($passuser){
+       $this->passuser = $passuser;
+     } 
+     function getpassuser(){
+       return $this->passuser;
+     } 
+     function setcorreo($correo){
+       $this->correo = $correo;
+     } 
+     function getcorreo(){
+       return $this->correo;
+     } 
+      
 }
 
 ?> 
