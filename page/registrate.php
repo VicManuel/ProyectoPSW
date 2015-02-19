@@ -13,26 +13,26 @@
     <link rel="shortcut icon" href="image/icono.ico"/>
 
     <!-- CSS Global Compulsory -->
-    <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/css/one.style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/one.style.css">
 
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/plugins/line-icons/line-icons.css">
     <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">    
     <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/plugins/pace/pace-flash.css">
     <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/plugins/owl-carousel/owl.carousel.css">    
-    <link rel="stylesheet" href="css/settings.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="../css/settings.css" type="text/css" media="screen">
     <!--[if lt IE 9]><link rel="stylesheet" href="assets/plugins/revolution-slider/css/settings-ie8.css" type="text/css" media="screen"><![endif]-->
-    <link rel="stylesheet" type="text/css" href="css/cubeportfolio.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" href="css/principal.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../css/cubeportfolio.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" href="../css/principal.css" type="text/css">
 
     <!-- Style Switcher -->
     <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/css/plugins/style-switcher.css">
 
     <!-- CSS Theme -->    
     <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/css/theme-colors/default.css" id="style_color">
-    <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/css/theme-skins/one.dark.css">
+    <link rel="stylesheet" href="../css/one.dark.css">
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="../css/custom.css">
@@ -46,59 +46,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
   <div class="pace-progress-inner"></div>
 </div>
 <div class="pace-activity"></div></div>
-    <!--=== Style Switcher ===-->    
-    <i class="style-switcher-btn fa fa-cogs hidden-xs"></i>
-    <div class="style-switcher animated fadeInRight">
-        <div class="style-swticher-header">
-            <div class="style-switcher-heading">Style Switcher</div>            
-            <div class="theme-close"><i class="icon-close"></i></div>
-        </div>
-
-        <div class="style-swticher-body">
-            <!-- Theme Colors -->
-            <div class="style-switcher-heading">Theme Colors</div>
-            <ul class="list-unstyled">
-                <li class="theme-default theme-active" data-style="default" data-header="light"></li>
-                <li class="theme-blue" data-style="blue" data-header="light"></li>
-                <li class="theme-orange" data-style="orange" data-header="light"></li>
-                <li class="theme-red" data-style="red" data-header="light"></li>
-                <li class="theme-light" data-style="light" data-header="light"></li>
-                <li class="theme-purple last" data-style="purple" data-header="light"></li>
-                <li class="theme-aqua" data-style="aqua" data-header="light"></li>
-                <li class="theme-brown" data-style="brown" data-header="light"></li>
-                <li class="theme-dark-blue" data-style="dark-blue" data-header="light"></li>
-                <li class="theme-light-green" data-style="light-green" data-header="light"></li>
-                <li class="theme-dark-red" data-style="dark-red" data-header="light"></li>
-                <li class="theme-teal last" data-style="teal" data-header="light"></li>
-            </ul>
-
-            <!-- Theme Skins -->
-            <div class="style-switcher-heading">Theme Skins</div>
-            <div class="row no-col-space margin-bottom-20 skins-section">
-                <div class="col-xs-6">
-                    <button data-skins="default" class="btn-u btn-u-xs btn-u-dark btn-block handle-skins-btn">Light</button>
-                </div>
-                <div class="col-xs-6">
-                    <button data-skins="dark" class="btn-u btn-u-xs btn-u-dark btn-block active-switcher-btn skins-btn">Dark</button>
-                </div>
-            </div>            
-
-            <hr>
-
-            <!-- Theme Type -->
-            <div class="style-switcher-heading">Theme Type</div>
-            <div class="row no-col-space">
-                <div class="col-xs-6">
-                    <a href="" class="btn-u btn-u-xs btn-u-dark btn-block">Main Demo</a>
-                </div>
-                <div class="col-xs-6">
-                    <a href="" class="btn-u btn-u-xs btn-u-dark btn-block">Shop UI</a>
-                </div>
-            </div>            
-        </div>
-    </div>
-    <!--=== End Style Switcher ===--> 
-
+    
     <!--=== Header ===-->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
@@ -109,7 +57,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">
+                <a class="navbar-brand" href="#">
                     <span>W</span>od<span>H</span>ard
                     <!-- <img src="assets/img/logo1.png" alt="Logo"> -->
                 </a>
@@ -119,7 +67,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
                     <li class="page-scroll home active">
-                        <a href="../index.html">Inicio</a>
+                        <a href="../index.php">Inicio</a>
                     </li>
                 </ul>
             </div>
@@ -136,7 +84,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
     <div class="reg-block">
         <div class="reg-block-header">
             <h2>Registrate</h2>
-            <p>Ya se ha registrado? Haga Click <a class="color-green" href="Login-Inicio.html">Iniciar Sesión</a> para iniciar sesión en su cuenta.</p>
+            <p>Ya se ha registrado? Haga Click <a class="color-green" href="Login-Inicio.php">Iniciar Sesión</a> para iniciar sesión en su cuenta.</p>
         </div>
 
         <div class="input-group margin-bottom-20">
@@ -175,9 +123,9 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 </section>
 <!--=== End Content Part ===-->
   
-    <script type="text/javascript" src="..jquery/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="..jquery/jquery-migrate-1.2.1.min.js"></script>    
-    <script type="text/javascript" src="..jquery/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../jquery/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../jquery/jquery-migrate-1.2.1.min.js"></script>    
+    <script type="text/javascript" src="../jquery/bootstrap.min.js"></script>
 
 
 </body>

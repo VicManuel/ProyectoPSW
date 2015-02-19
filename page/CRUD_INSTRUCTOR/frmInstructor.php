@@ -1,9 +1,11 @@
+
 <div class="overlay-container">
 			<div class="window-container zoomin">
 		<form class="reg-page" align="center">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="reg-header">            
                         <h2>Registro de Instructor</h2>
                     </div>
+				
 
                     <div class="input-group margin-bottom-20">
                         <span class="input-group-addon"><i class="fa fa-user"></i></span>

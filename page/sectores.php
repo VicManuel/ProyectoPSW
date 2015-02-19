@@ -1,3 +1,18 @@
+<?php
+
+  $last_visit = isset($_COOKIE['last_visit']) ? $_COOKIE['last_visit'] : "Primera vez";
+  $current_visit = date("C");
+  setcookie("last_visit", $current_visit, (time()+60*60*24*30));
+  session_start();
+  $user = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : null ;
+
+if($user == ''){
+	header('Location: Login-Inicio.php?error=2');
+}
+
+?>
+
+
 <!DOCTYPE html>
 <!-- saved from url=(0089)http://htmlstream.com/preview/unify-v1.6-production/One-Page/dark-page-example.html#intro -->
 <html lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -12,8 +27,8 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="../image/icono.ico"/>
     <!-- CSS Global Compulsory -->
-    <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/css/one.style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/one.style.css">
 
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/plugins/line-icons/line-icons.css">
@@ -24,14 +39,14 @@
     <!--[if lt IE 9]><link rel="stylesheet" href="assets/plugins/revolution-slider/css/settings-ie8.css" type="text/css" media="screen"><![endif]-->
     <link rel="stylesheet" type="text/css" href="../css/cubeportfolio.min.css">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
-	<link rel="stylesheet" href="css/principal.css" type="text/css">
+	<link rel="stylesheet" href="../css/principal.css" type="text/css">
 
     <!-- Style Switcher -->
     <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/css/plugins/style-switcher.css">
 
     <!-- CSS Theme -->    
     <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/css/theme-colors/default.css" id="style_color">
-    <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/css/theme-skins/one.dark.css">
+    <link rel="stylesheet" href="../css/one.dark.css">
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/css/custom.css">
@@ -53,48 +68,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             <div class="theme-close"><i class="icon-close"></i></div>
         </div>
 
-        <div class="style-swticher-body">
-            <!-- Theme Colors -->
-            <div class="style-switcher-heading">Theme Colors</div>
-            <ul class="list-unstyled">
-                <li class="theme-default theme-active" data-style="default" data-header="light"></li>
-                <li class="theme-blue" data-style="blue" data-header="light"></li>
-                <li class="theme-orange" data-style="orange" data-header="light"></li>
-                <li class="theme-red" data-style="red" data-header="light"></li>
-                <li class="theme-light" data-style="light" data-header="light"></li>
-                <li class="theme-purple last" data-style="purple" data-header="light"></li>
-                <li class="theme-aqua" data-style="aqua" data-header="light"></li>
-                <li class="theme-brown" data-style="brown" data-header="light"></li>
-                <li class="theme-dark-blue" data-style="dark-blue" data-header="light"></li>
-                <li class="theme-light-green" data-style="light-green" data-header="light"></li>
-                <li class="theme-dark-red" data-style="dark-red" data-header="light"></li>
-                <li class="theme-teal last" data-style="teal" data-header="light"></li>
-            </ul>
-
-            <!-- Theme Skins -->
-            <div class="style-switcher-heading">Theme Skins</div>
-            <div class="row no-col-space margin-bottom-20 skins-section">
-                <div class="col-xs-6">
-                    <button data-skins="default" class="btn-u btn-u-xs btn-u-dark btn-block handle-skins-btn">Light</button>
-                </div>
-                <div class="col-xs-6">
-                    <button data-skins="dark" class="btn-u btn-u-xs btn-u-dark btn-block active-switcher-btn skins-btn">Dark</button>
-                </div>
-            </div>            
-
-            <hr>
-
-            <!-- Theme Type -->
-            <div class="style-switcher-heading">Theme Type</div>
-            <div class="row no-col-space">
-                <div class="col-xs-6">
-                    <a href="" class="btn-u btn-u-xs btn-u-dark btn-block">Main Demo</a>
-                </div>
-                <div class="col-xs-6">
-                    <a href="" class="btn-u btn-u-xs btn-u-dark btn-block">Shop UI</a>
-                </div>
-            </div>            
-        </div>
+        
     </div>
     <!--=== End Style Switcher ===--> 
 
@@ -117,22 +91,29 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="page-scroll home active">
-                        <a href="../index.html">Home</a>
-                    </li>
+                   
                     <li class="page-scroll">
-                        <a href="nosotros.html">Nosotros</a>
+                        <a href="nosotros.php">Nosotros</a>
                     </li>
 					<li class="page-scroll">
                         <a href="#">Sectores</a>
                     </li>
 					 <li class="page-scroll">
-                        <a href="pesoIdeal.html">Peso Ideal</a>
+                        <a href="pesoIdeal.php">Peso Ideal</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="contactenos.html">Contactenos</a>
+                        <a href="contactenos.php">Contactenos</a>
                     </li>                    
                 
+		     <li class="page-scroll">
+                       <?php
+				
+				if (isset($_SESSION['usuario'])){
+				  echo "<p><h4> usuario:(" . $_SESSION['usuario'] . ") [<a href='../logout.php'>Salir</a>]";
+				 }
+				  
+			?>	 
+                    </li> 	
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

@@ -12,8 +12,8 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="../image/icono.ico"/>
     <!-- CSS Global Compulsory -->
-    <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/css/one.style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/one.style.css">
 
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/plugins/line-icons/line-icons.css">
@@ -31,7 +31,7 @@
 
     <!-- CSS Theme -->    
     <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/css/theme-colors/default.css" id="style_color">
-    <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/css/theme-skins/one.dark.css">
+    <link rel="stylesheet" href="../css/one.dark.css">
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/css/custom.css">
@@ -45,58 +45,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
   <div class="pace-progress-inner"></div>
 </div>
 <div class="pace-activity"></div></div>
-    <!--=== Style Switcher ===-->    
-    <i class="style-switcher-btn fa fa-cogs hidden-xs"></i>
-    <div class="style-switcher animated fadeInRight">
-        <div class="style-swticher-header">
-            <div class="style-switcher-heading">Style Switcher</div>            
-            <div class="theme-close"><i class="icon-close"></i></div>
-        </div>
-
-        <div class="style-swticher-body">
-            <!-- Theme Colors -->
-            <div class="style-switcher-heading">Theme Colors</div>
-            <ul class="list-unstyled">
-                <li class="theme-default theme-active" data-style="default" data-header="light"></li>
-                <li class="theme-blue" data-style="blue" data-header="light"></li>
-                <li class="theme-orange" data-style="orange" data-header="light"></li>
-                <li class="theme-red" data-style="red" data-header="light"></li>
-                <li class="theme-light" data-style="light" data-header="light"></li>
-                <li class="theme-purple last" data-style="purple" data-header="light"></li>
-                <li class="theme-aqua" data-style="aqua" data-header="light"></li>
-                <li class="theme-brown" data-style="brown" data-header="light"></li>
-                <li class="theme-dark-blue" data-style="dark-blue" data-header="light"></li>
-                <li class="theme-light-green" data-style="light-green" data-header="light"></li>
-                <li class="theme-dark-red" data-style="dark-red" data-header="light"></li>
-                <li class="theme-teal last" data-style="teal" data-header="light"></li>
-            </ul>
-
-            <!-- Theme Skins -->
-            <div class="style-switcher-heading">Theme Skins</div>
-            <div class="row no-col-space margin-bottom-20 skins-section">
-                <div class="col-xs-6">
-                    <button data-skins="default" class="btn-u btn-u-xs btn-u-dark btn-block handle-skins-btn">Light</button>
-                </div>
-                <div class="col-xs-6">
-                    <button data-skins="dark" class="btn-u btn-u-xs btn-u-dark btn-block active-switcher-btn skins-btn">Dark</button>
-                </div>
-            </div>            
-
-            <hr>
-
-            <!-- Theme Type -->
-            <div class="style-switcher-heading">Theme Type</div>
-            <div class="row no-col-space">
-                <div class="col-xs-6">
-                    <a href="" class="btn-u btn-u-xs btn-u-dark btn-block">Main Demo</a>
-                </div>
-                <div class="col-xs-6">
-                    <a href="" class="btn-u btn-u-xs btn-u-dark btn-block">Shop UI</a>
-                </div>
-            </div>            
-        </div>
-    </div>
-    <!--=== End Style Switcher ===--> 
+    
 
     <!--=== Header ===-->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -117,20 +66,18 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="page-scroll home active">
-                        <a href="../index.html">Home</a>
-                    </li>
+                   
                     <li class="page-scroll">
                         <a href="#">Nosotros</a>
                     </li>
 					<li class="page-scroll">
-                    <a href="sectores.html">Sectores</a>
+                    <a href="sectores.php">Sectores</a>
                     </li>
 					<li class="page-scroll">
-                    <a href="pesoIdeal.html">Peso Ideal</a>
+                    <a href="pesoIdeal.php">Peso Ideal</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="contactenos.html">Contactenos</a>
+                        <a href="contactenos.php">Contactenos</a>
                     </li>                    
                 </ul>
             </div>

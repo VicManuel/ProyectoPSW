@@ -1,4 +1,5 @@
 <?php
+$err = isset($_GET['error']) ? $_GET['error'] : null ;
   $last_visit = isset($_COOKIE['last_visit']) ? $_COOKIE['last_visit'] : "Primera vez";
   $current_visit = date("C");
   setcookie("last_visit", $current_visit, (time()+60*60*24*30));
@@ -74,7 +75,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
                     <li class="page-scroll home active">
-                        <a href="../index.html">Inicio</a>
+                        <a href="../index.php">Inicio</a>
                     </li>
 					<li class="page-scroll home active">
                         
@@ -94,12 +95,21 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
     <div class="container content">		
     	<div class="row">
             <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
-                
-			<?php
-				
-				{
-					?>
-						<form class="reg-page" action="Mantenimientos.php" method="post">
+	      
+	      
+	
+		
+		
+			
+			<form class="reg-page" action="CRUD_USUARIO.php" method="post">
+			  <?php
+				if($err==1){
+				  echo "Usuario o Contraseña Erróneos <br />";
+				}
+				if($err==2){
+				 	echo" <script> alert('DEBE INICIAR SESION');</script>";
+				}
+			  ?>	
 							<div class="reg-header">            
 								<h2>Ingrese a su Cuenta</h2>
 							</div>
@@ -110,7 +120,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 							</div>                    
 							<div class="input-group margin-bottom-20">
 								<span class="input-group-addon"><i class="fa fa-lock"></i></span>
-								<input type="Password" placeholder="Contraseña" class="form-control" name="contraseña">
+								<input type="Password" placeholder="Contrasena" class="form-control" name="contrasena">
 							</div>                    
 
 							<div class="row">
@@ -119,9 +129,12 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 								</div>
 							</div>
 						</form> 
-					<?php
-				}
-			?>
+			
+		    
+	
+                
+			
+						
 					
             </div>
         </div><!--/row-->

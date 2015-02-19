@@ -1,6 +1,6 @@
 <div class="overlay-container">
 			<div class="window-container zoomin">
-		<form class="reg-page" align="center" action="../Rutina/CRUD.php" method='post'>
+		<form class="reg-page" align="center" action="CRUD.php" method='post'>
 				
 				
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="reg-header">            
