@@ -1,6 +1,10 @@
 <?php
+  $last_visit = isset($_COOKIE['last_visit']) ? $_COOKIE['last_visit'] : "Primera vez";
+  $current_visit = date("C");
+  setcookie("last_visit", $current_visit, (time()+60*60*24*30));
   session_start();
 ?>
+
 
 <!DOCTYPE html>
 <!-- saved from url=(0089)http://htmlstream.com/preview/unify-v1.6-production/One-Page/dark-page-example.html#intro -->
@@ -71,7 +75,13 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                                        
+                    <li class="page-scroll home active">
+                        <a href="#">Home</a>
+                    </li>
+                   
+                    <li class="page-scroll">
+                        <a href="page/contactenos.php">Contactenos</a>
+                    </li>                    
                 
                 </ul>
             </div>
@@ -82,24 +92,16 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
     <!--=== End Header ===-->
    <div class="container content-lg">
             <div class="title-v1">
-<?php
-		if(isset($_SESSION['usuario'])){
-		  session_destroy();
-		  echo "<h3>se ha destruido sesión exitosamente <br/>";
-		  echo "</br></br>";
-		  echo "<span class='page-scroll'><a href='index.php' class='btn-u btn-brd btn-brd-hover btn-u-light'>VOLVER</a></span>";
-		}else
-		{
-		  echo "ERROR... "; 
-		}
-		 
-		  
-		
-	?>
+                <h2>WODHARD</h2>
+                <p>“La forma física no es sólamente una de las claves más importantes para un cuerpo saludable,<br> 
+                es la base de la actividad intelectual creativa y dinámica”</p>
            </div>
    </div>
    
- 
+   <div align="center">
+                            <span class="page-scroll"><a href="page/Login-Inicio.php" class="btn-u btn-brd btn-brd-hover btn-u-light">Iniciar Sesión</a></span>
+                            <span class="page-scroll"><a href="page/registrate.php" class="btn-u btn-brd btn-brd-hover btn-u-light">Regístrate</a></span>
+    </div>
              
 
     
