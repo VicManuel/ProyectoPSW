@@ -105,12 +105,6 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
         </div>
         <hr>
 
-        <div class="checkbox">            
-            <label>
-                <input type="checkbox"> 
-                <p>Leí <a target="_blank" href="terminos.html">Terminos y Condiciones</a></p>
-            </label>
-        </div>
                                 
         <div class="row">
             <div class="col-md-10 col-md-offset-1">

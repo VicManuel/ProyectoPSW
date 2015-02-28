@@ -34,9 +34,9 @@ $RutinaCollectorObj = new RutinaCollector();
     <!-- Favicon -->
     <link rel="shortcut icon" href="../image/icono.ico"/>
     <!-- CSS Global Compulsory -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/one.style.css">
-	<link rel="stylesheet" href="../css/demo.css">
+     <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/css/one.style.css">
+	<link rel="stylesheet" href="../css/demo.css" type="text/css">
 
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/plugins/line-icons/line-icons.css">
@@ -45,8 +45,8 @@ $RutinaCollectorObj = new RutinaCollector();
     <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/plugins/owl-carousel/owl.carousel.css">    
     <link rel="stylesheet" href="../css/settings.css" type="text/css" media="screen">
     <!--[if lt IE 9]><link rel="stylesheet" href="assets/plugins/revolution-slider/css/settings-ie8.css" type="text/css" media="screen"><![endif]-->
-    <link rel="stylesheet" type="text/css" href="../css/cubeportfolio.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/css/one.style.css">
 	<link rel="stylesheet" href="../css/principal.css" type="text/css">
 
     <!-- Style Switcher -->
@@ -104,10 +104,6 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 		    </li>
 			
 		    <li class="page-scroll home active">
-                        <a href="#">Nosotros</a>
-		    </li>
-		    
-		    <li class="page-scroll home active">
                         <a href="#">Contactenos</a>
 		    </li>
 			
@@ -125,8 +121,6 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 				  
 			?>	
 		    </li>
-                    		
-                
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -137,123 +131,107 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 
    <section id="services">
        
-	   <div id="retorno">
-			<br><br><br><br>
+	<div id="retorno">
+	
+			<br></br><br></br><br></br><br></br>
 			
         <ul class="list-unstyled row portfolio-box-v1">
-            <li class="col-sm-4" align="center">
-                <center><img class="img-responsive" src="../image/gym1.jpg" alt=""></center>
+            <li class="col-sm-4">
+                <img class="img-responsive" src="../image/gym1.jpg" alt="">
                 <div class="portfolio-box-v1-in">
                     <h3>Ingresar Nuevo Gimnasio</h3>
                     <a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" href="#gym">Ingresar</a>
                 </div>
-            </li></br>
+            </li>
             <li class="col-sm-4" align="center">
-                <center><img class="img-responsive" src="../image/gym2.jpg" alt=""></center>
+                <img class="img-responsive" src="../image/gym2.jpg" alt="">
                 <div class="portfolio-box-v1-in">
                     <h3>Ingresa Nueva Rutina</h3>
                     <a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" href="#Rutina">Ingresar</a>
                 </div>
-            </li></br>
+            </li>
             <li class="col-sm-4" align="center">
-                <center><img class="img-responsive" src="../image/gym3.jpg" alt=""></center>
+                <img class="img-responsive" src="../image/gym3.jpg" alt="">
                 <div class="portfolio-box-v1-in">
                     <h3>Ingresa Nuevo Instructor</h3>
                     <a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" href="#Instructor">Ingresar</a>
                 </div>
             </li>
         </ul>
-		</div>
+	</div>
 		<br><br><br><br><br><br><br>
 	<div id="gym" class="container content-lg" align="center">
-            <div class="title-v1">
+       <div class="title-v1">
                 <h2>GIMNASIOS</h2>
                 <p>Encuentra el <strong>Gimnasio</strong> que prefieras segun el lugar de donde vivas. <br> 
                 ENTRENA, INSISTE, PERSISTE Y <strong>RESISTE</strong>.</p>                
-            </div>            
+       </div>            
     
-            <div class="row service-box-v1" align="center">
-                <div class="col-md-4 col-sm-6">
-                    <div class="service-block service-block-default" align="center">
-			<center><img class="img-responsive" src="../image/gym5.jpg" alt=""></center>
-                        <h2 class="heading-md">CROSSFIT GUAYAQUIL - GIMNASIO CORPUS</h2>
-						
-						<input class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" type="file" id="foto" name="foto_fls" title="Sube tu foto" />
-                                                
-                    </div>
+       <div class="row service-box-v1" align="center">
+            <div class="col-md-4 col-sm-6">
+                <div class="service-block service-block-default" align="center">
+			    <center><img class="img-responsive" src="../image/perfil.jpg" alt=""></center>
+				<br></br>
+			     <input class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" type="file" id="foto" name="foto_fls" title="Sube tu foto" />                      
                 </div>
+            </div>
 		<div class="col-md-4 col-sm-6">
-                    <div class="service-block service-block-default" align="center">
-			<div class="row">
-            <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
-				<div align="center">
-					<input type="button" value="Registra un Nuevo Gimnasio" class="button" data-type="zoomin" />
-					<?php include 'CRUD_INSTRUCTOR/frmGimnasio.php';?>	
-				</div>
-
-					
+           <div class="service-block service-block-default" align="center">
+			   <div class="row">
+                  <div >
+				     <div align="center">
+				<input class="button" type="button" value="Registra Nuevo Gimnasio" data-type="zoomin" />
+				<?php include 'CRUD_INSTRUCTOR/frmGimnasio.php';?>	
+				     </div>
+                  </div>
+               </div>                            
             </div>
         </div>
-                                              
-                    </div>
-                </div>
-	    </div>
+	   </div>
 	    <a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" href="#retorno">Menú</a>
 	    
         </div>
 	
 		<br><br><br><br>
 	<div id="Rutina" class="container content-lg" align="center">
-	
             <div class="title-v1">
                 <h2>RUTINAS</h2>
                 <p>Encuentra el <strong>Gimnasio</strong> que prefieras segun el lugar de donde vivas. <br> 
                 ENTRENA, INSISTE, PERSISTE Y <strong>RESISTE</strong>.</p>                
             </div>            
     
-            <div class="row service-box-v1" align="center">
-                <div class="col-md-4 col-sm-6">
-                    <div class="service-block service-block-default" align="center">
-			<center><img class="img-responsive" src="../image/gym5.jpg" alt=""></center>
-                        <h2 class="heading-md">CROSSFIT GUAYAQUIL - GIMNASIO CORPUS</h2>
-			</br>			
-				<center><input class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" type="file" id="foto" name="foto_fls" title="Sube tu foto" /></center>
-                                                
-                    </div>
-                </div>
-		<div class="col-md-4 col-sm-6">
-                    <div class="service-block service-block-default" align="center">
-			<div class="row">
-            <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
-			
-				<div align="center">
-					<input type="button" value="Registra un Nueva Rutina" class="button" data-type="zoomin" />
-					<?php include 'CRUD_INSTRUCTOR/frmRutina.php';?>	
-				</div>
-                
-
-					
+    <div class="row service-box-v1" align="center">
+        <div class="col-md-4 col-sm-6">
+           <div class="service-block service-block-default" align="center">
+			<img class="img-responsive" src="../image/perfil.jpg" alt="">			
+				<input class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" type="file" id="foto" name="foto_fls" title="Sube tu foto" />                        
+          </div>
+       </div>
+	   <div class="col-md-4 col-sm-6">
+           <div class="service-block service-block-default" align="center">
+			   <div class="row">
+                  <div >
+				     <div align="center">
+				<input class="button" type="button" value="Registra Nueva Rutina" data-type="zoomin" />
+				<?php include 'CRUD_INSTRUCTOR/frmRutina.php';?>	
+				     </div>
+                  </div>
+               </div>                            
             </div>
         </div>
-                                              
-                    </div>
-                </div>
-	    </div>
-	    <a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" href="#retorno">Menú</a>
-	    
-        </div>	
-
+	</div>
+	<a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" href="#retorno">Menú</a>
+   </div>	
 
 	<div id="Instructor" class="container content-lg" align="center">
-          
-            <div class="title-v1">
+       <div class="title-v1">
                 <h2>INSTRUCTORES</h2>
                 <p>Encuentra el <strong>Gimnasio</strong> que prefieras segun el lugar de donde vivas. <br> 
                 ENTRENA, INSISTE, PERSISTE Y <strong>RESISTE</strong>.</p>                
-            </div>            
+       </div>            
     
-            <div class="row service-box-v1" align="center" >
-                <div class="col-md-4 col-sm-6">
+       <div class="row service-box-v1" align="center" >
+            <div class="col-md-4 col-sm-6">
                     <div class="service-block service-block-default" align="center">
 					<form method="post" action="img.php" enctype="multipart/form-data"align="center">
 						<!--<center><img class="img-responsive" src="../image/gym5.jpg" alt=""></center>-->
@@ -280,30 +258,23 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 															
 							?>				
 						</div>
-						
-						
-						
                     </form>                           
                     </div>
                 </div>
-		<div class="col-md-4 col-sm-6">
-                    <div class="service-block service-block-default" align="center">
-			<div class="row">
-            <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
-                
-			<div align="center">
-				<input type="button" value="Registra un Nuevo Instructor" class="button" data-type="zoomin" />
+	   <div class="col-md-4 col-sm-6">
+           <div class="service-block service-block-default" align="center">
+			   <div class="row">
+                  <div >
+				     <div align="center">
+				<input class="button" type="button" value="Registra Nuevo Instructor" data-type="zoomin" />
 				<?php include 'CRUD_INSTRUCTOR/frmInstructor.php';?>	
-			</div>
-			
+				     </div>
+                  </div>
+               </div>                            
             </div>
         </div>
-                                              
-                    </div>
-                </div>
-	    </div>
+	 </div>
 	    <a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" href="#retorno">Menú</a>
-	    
         </div>
 
 		

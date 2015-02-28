@@ -12,8 +12,8 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="../image/icono.ico"/>
     <!-- CSS Global Compulsory -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/one.style.css">
+     <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/css/one.style.css">
 
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/plugins/line-icons/line-icons.css">

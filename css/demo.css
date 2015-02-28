@@ -39,41 +39,41 @@ a, a:visited {
 	.button {
 		display: inline-block;
 		margin-right: .5em;
-		box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4),
-						0px 0px 25px rgba(0,0,0,0.3);
+		box-shadow: inset 0px 1px 0px rgba(61, 106, 49, 0.6),
+						0px 0px 25px rgba(61, 106, 49, 0.6);
 		
 		padding: 20px 20px;
-		border: 1px solid #562f15;
+		border: 1px solid #155724;
 		font-size: 20px;
 		font-weight: normal;
 		color: #fff;
 		text-shadow: 1px 1px 1px #7f130a;
 		border-radius: 3px;
 		cursor: pointer;
-		background: rgb(147,80,36);
-		background: -moz-linear-gradient(top,  rgba(147,80,36,1) 19%, rgba(106,58,26,1) 100%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(19%,rgba(147,80,36,1)), color-stop(100%,rgba(106,58,26,1)));
-		background: -webkit-linear-gradient(top,  rgba(147,80,36,1) 19%,rgba(106,58,26,1) 100%);
-		background: -o-linear-gradient(top,  rgba(147,80,36,1) 19%,rgba(106,58,26,1) 100%);
-		background: -ms-linear-gradient(top,  rgba(147,80,36,1) 19%,rgba(106,58,26,1) 100%);
-		background: linear-gradient(to bottom,  rgba(147,80,36,1) 19%,rgba(106,58,26,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#935024', endColorstr='#6a3a1a',GradientType=0 );
+		background: rgb(61, 106, 49, 0.6);
+		background: linear-gradient(top,  rgba(61, 106, 49, 0.6) 19%, rgba(61, 106, 49, 0.6) 100%);
+		background: gradient(linear, left top, left bottom, color-stop(19%,rgba(61, 106, 49, 0.6)), color-stop(100%,rgba(61, 106, 49, 0.6)));
+		background: linear-gradient(top,  rgba(61, 106, 49, 0.6) 19%,rgba(61, 106, 49, 0.6) 100%);
+		background: linear-gradient(top,  rgba(61, 106, 49, 0.6) 19%,rgba(61, 106, 49, 0.6) 100%);
+		background: linear-gradient(top,  rgba(61, 106, 49, 0.6) 19%,rgba(61, 106, 49, 0.6) 100%);
+		background: linear-gradient(to bottom,  rgba(61, 106, 49, 0.6) 19%,rgba(61, 106, 49, 0.6) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45902A', endColorstr='#1B6B1B',GradientType=0 );
 	}
 	
 		.button:hover {
-			background: rgb(167,91,41);
-			background: -moz-linear-gradient(top,  rgba(167,91,41,1) 19%, rgba(126,69,31,1) 100%);
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(19%,rgba(167,91,41,1)), color-stop(100%,rgba(126,69,31,1)));
-			background: -webkit-linear-gradient(top,  rgba(167,91,41,1) 19%,rgba(126,69,31,1) 100%);
-			background: -o-linear-gradient(top,  rgba(167,91,41,1) 19%,rgba(126,69,31,1) 100%);
-			background: -ms-linear-gradient(top,  rgba(167,91,41,1) 19%,rgba(126,69,31,1) 100%);
-			background: linear-gradient(to bottom,  rgba(167,91,41,1) 19%,rgba(126,69,31,1) 100%);
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a75b29', endColorstr='#7e451f',GradientType=0 );
+			background: rgb(61, 106, 49, 0.6);
+			background: -moz-linear-gradient(top,  rgba(61, 106, 49, 0.6) 19%, rgba(61, 106, 49, 0.6) 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(19%,rgba(61, 106, 49, 0.6)), color-stop(100%,rgba(61, 106, 49, 0.6)));
+			background: -webkit-linear-gradient(top,  rgba(61, 106, 49, 0.6) 19%,rgba(61, 106, 49, 0.6) 100%);
+			background: -o-linear-gradient(top,  rgba(61, 106, 49, 0.6) 19%,rgba(61, 106, 49, 0.6) 100%);
+			background: -ms-linear-gradient(top,  rgba(61, 106, 49, 0.6) 19%,rgba(61, 106, 49, 0.6) 100%);
+			background: linear-gradient(to bottom,  rgba(61, 106, 49, 0.6) 19%,rgba(61, 106, 49, 0.6) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45902A', endColorstr='#1B6B1B',GradientType=0 );
 		}
 		
 		.button:active {
 			box-shadow: 0px 0px 25px rgba(0,0,0,0.3),
-							inset 0px 0px 20px #412410;
+							inset 0px 0px 20px #45902A;
 		}
 	
 	.overlay-container {
@@ -103,18 +103,18 @@ a, a:visited {
 		z-index: 3;
 		border-radius: 3px;
 		box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
-		-webkit-transition: 0.4s ease-out;
-		-moz-transition: 0.4s ease-out;
-		-ms-transition: 0.4s ease-out;
-		-o-transition: 0.4s ease-out;
+		transition: 0.4s ease-out;
+		transition: 0.4s ease-out;
+		transition: 0.4s ease-out;
+		transition: 0.4s ease-out;
 		transition: 0.4s ease-out;
 		opacity: 0;
 	}
 	
 	.zoomin {
-		-webkit-transform:  scale(1.2);
-		-moz-transform:  scale(1.2);
-		-ms-transform:  scale(1.2);
+		transform:  scale(1.2);
+		transform:  scale(1.2);
+		transform:  scale(1.2);
 		transform:  scale(1.2);
 	}
 	

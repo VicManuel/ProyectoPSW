@@ -12,8 +12,8 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="../image/icono.ico"/>
     <!-- CSS Global Compulsory -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/one.style.css">
+     <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/css/one.style.css">
 
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="http://htmlstream.com/preview/unify-v1.6-production/One-Page/assets/plugins/line-icons/line-icons.css">
@@ -127,7 +127,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             <p>2014 © WodHard <a target="_blank" href="https://www.facebook.com/resistepersiste"></a></p>
             <ul class="social-icons">
                 <li><a href="https://www.facebook.com/resistepersiste" data-original-title="Facebook" class="social_facebook rounded-x"></a></li>
-                
+                <li><a href="https://twitter.com/wod_hard" data-original-title="Twitter" class="social_twitter rounded-x"></a></li>
             </ul>
             <!-- <span class="page-scroll"><a href="./Unify   Creative One Page Theme_files/Unify   Creative One Page Theme.html"><i class="fa fa-angle-double-up back-to-top"></i></a></span>-->
         </div>
