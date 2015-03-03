@@ -108,7 +108,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                                 
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
-                <button type="submit" class="btn-u btn-block"><a href ="registrarse.php">Regístrarse</a></button>                
+                <button type="submit" class="btn-u btn-block"><a href ="comentregistrate.php">Regístrarse</a></button>                
             </div>
         </div>
     </div>
