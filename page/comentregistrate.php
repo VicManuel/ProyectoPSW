@@ -97,7 +97,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
    <div class="container content-lg">
             <div class="title-v1">
 			<p>
-			Usuario registrado correctamente ahora debes <a href="login.php">Iniciar Sesion</a>
+			Usuario registrado correctamente ahora debes <a href="../login.php">Iniciar Sesion</a>
 			</p>
            </div>
    </div>
