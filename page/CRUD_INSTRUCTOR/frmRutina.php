@@ -1,49 +1,84 @@
+
+
+<?php
+require_once("RutinaCollector.php");
+$RutinaCollectorObj= new RutinaCollector();
+?>
+
 <div class="overlay-container">
-			<div class="window-container zoomin">
-		<form class="reg-page" align="center" action="CRUD.php" method='post'>
+	<div class="window-container zoomin">
+		<form  align="left" action="CRUD_Rutina.php" method='post' enctype="multipart/form-data">
 				
 				
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="reg-header">            
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		    <div class="reg-header">            
                         <center><h2>Registro de Rutina</h2></center>
                     </div>
-					
+		    
+		    		    
+		    <?php
+								
+								
+								
+								
+			foreach ($RutinaCollectorObj->readRutina() as $ObjRutina){
+			$codigo=$ObjRutina->getidrutina();
+			$imagen=$ObjRutina->getimagenRutina();
+			$nombre=$ObjRutina->getdescripcion();
+			
+			}	
 
-                    <div class="input-group margin-bottom-20">
-                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                        <input type="text" placeholder="IDRutina" class="form-control" name="Codigo" autofocus requireg>
-                    </div>                    
-                    
-					<div class="input-group margin-bottom-20">
-                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                        <input type="text" placeholder="Descripción" class="form-control" name="Descripción" autofocus required />
-                    </div>
-					<div class="input-group margin-bottom-20">
-                        <span class="input-group-addon">Dia<i class="fa fa-lock"></i></span>
-								<select name="periodo" placeholder="Dia">
-									<option value="Lunes">Lunes</option>
-									<option value="Martes">Martes</option>
-									<option value="Miércoles">Miércoles</option>
-									<option value="Jueves">Jueves</option>
-									<option value="Viernes">Viernes</option>
-									<option value="Sábado">Sábado</option>
-									<option value="Domingo">Domingo</option>									
-									<option value="Todos">Todos</option>
-								</select>
-					<!--	<input type="date" placeholder="fecha" class="form-control" name="Fecha" autofocus required/>-->
-                    </div>
-					<div class="input-group margin-bottom-20">
-                        <span class="input-group-addon">Activo<i class="fa fa-lock"></i></span>
-						<input type="radio" class="form-control" name="Estado" value="1" autofocus required/>
-						<span class="input-group-addon">Inactivo<i class="fa fa-lock"></i></span>
-                        <input type="radio" class="form-control" name="Estado" value="0" autofocus required/>
-                    </div>
-</br></br>
+															
+		?>
+		    
+    <br /><br />
+    	<table width="200" border="0" align="center" >
+        <tr> <td rowspan="6"><img src="<?php echo $imagen?>" width="200" height="200" title="<?php echo $nombre ?>" legend="<?php echo $nombre ?>"/></td></tr>
+   
+  <tr>
+    <td><b>Codigo</b></td>
+    <td><input type="text" name="Codigo" id="nombres_editar" value="<?php echo $codigo ?>" /></td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+	<td>
+    	<input type="text" name="Descripción" id="apellidos_editar" value="" />        
+    </td>
+  </tr>
+  <tr>
+    <td><b>Día</b></td>
+    <td>
+    	   <select name="periodo" placeholder="Dia">
+		<option value="Lunes">Lunes</option>
+		<option value="Martes">Martes</option>
+		<option value="Miércoles">Miércoles</option>
+		<option value="Jueves">Jueves</option>
+		<option value="Viernes">Viernes</option>
+		<option value="Sábado">Sábado</option>
+		<option value="Domingo">Domingo</option>									
+		<option value="Todos">Todos</option>
+	   </select>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Estado</b></td>
+    <td> <span >Activo</span>&nbsp&nbsp&nbsp<input type="radio" name="Estado" value="1" /></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><span >Inactivo</span>&nbsp<input type="radio" name="Estado" value="0" /></td>
+  </tr>
+   <tr><td colspan="3"><b>Subir Imagen de Rutina</b></td></tr>
+  <tr><td colspan="3"><input type="file" name="foto" /></td></tr>
+</table>
+</br></br></br>
                     <div class="row" align="center">
                         <div class="col-md-6">
-                            <input class="btn-u pull-right" type="submit" name="Accion" id="Accion" value="Grabar"/>
-							<input class="btn-u pull-right" type="submit" name="Accion" id="Accion" value="Eliminar"/>
-							<input class="btn-u pull-right" type="submit" name="Accion" id="Accion" value="Modificar"/>
-							<input class="btn-u pull-right" type="reset" id="reset" value="Nuevo"/>
+                           <input class="btn-u pull-right" type="submit" name="Accion" id="Accion" value="Grabar"/>
+			   <input class="btn-u pull-right" type="submit" name="Accion" id="Accion" value="Eliminar"/>
+			   <input class="btn-u pull-right" type="submit" name="Accion" id="Accion" value="Modificar"/>
+			   <input class="btn-u pull-right" type="reset" id="reset" value="Nuevo"/>
+			   <input class="btn-u pull-right" type="submit" name="Accion" id="Accion" value="Buscar"/>
                         </div>
                     </div>
                 </form> 
@@ -51,3 +86,6 @@
 							<span class="close">Cerrar</span>
 						</div>
 					</div>
+
+
+

@@ -16,7 +16,7 @@ if($user == ''){
 
 <?php
 include_once("RutinaCollector.php");
-include_once("ImagenCollector.php");
+
 $RutinaCollectorObj = new RutinaCollector();
 
 
@@ -172,7 +172,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                 <div class="service-block service-block-default" align="center">
 			    <center><img class="img-responsive" src="../image/perfil.jpg" alt=""></center>
 				<br></br>
-			     <input class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" type="file" id="foto" name="foto_fls" title="Sube tu foto" />                      
+			                         
                 </div>
             </div>
 		<div class="col-md-4 col-sm-6">
@@ -204,7 +204,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
         <div class="col-md-4 col-sm-6">
            <div class="service-block service-block-default" align="center">
 			<img class="img-responsive" src="../image/perfil.jpg" alt="">			
-				<input class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" type="file" id="foto" name="foto_fls" title="Sube tu foto" />                        
+				                       
           </div>
        </div>
 	   <div class="col-md-4 col-sm-6">
@@ -232,34 +232,10 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
     
        <div class="row service-box-v1" align="center" >
             <div class="col-md-4 col-sm-6">
-                    <div class="service-block service-block-default" align="center">
-					<form method="post" action="img.php" enctype="multipart/form-data"align="center">
-						<!--<center><img class="img-responsive" src="../image/gym5.jpg" alt=""></center>-->
-                        <h2 class="heading-md">FOTO DE INSTRUCTOR</h2>
-						<input class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" type="file" name="imagen1" />
-						</br>
-						<h4 class="heading-md">Descripción</h4>
-						<textarea cols="50" rows="3" name="texto"></textarea>
-						</br>
-						<input class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" type="submit" value="Sube tu Imagen"/>
-						</br></br></br></br>
-						<div>
-					
-							<?php
-								include_once("ImagenCollector.php");
-								$ImagenCollectorObj = new ImagenCollector();
-								$id="1";
-								if($id){						
-										$Objimagen=$ImagenCollectorObj->showImagen($id);
-										echo " <label><img src=".$Objimagen->getimagen()." width='100px' height='100px' ></label>";
-										echo "";
-										echo "<input type='text' value=".$Objimagen->gettexto()."/>";
-								}
-															
-							?>				
-						</div>
-                    </form>                           
-                    </div>
+                  <div class="service-block service-block-default" align="center">
+			<img class="img-responsive" src="../image/perfil.jpg" alt="">			
+				                       
+          </div>  
                 </div>
 	   <div class="col-md-4 col-sm-6">
            <div class="service-block service-block-default" align="center">

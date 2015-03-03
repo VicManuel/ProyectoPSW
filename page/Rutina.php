@@ -3,15 +3,17 @@
 class Rutina
 {
     private $idrutina;
-    private $descripción;
+    private $descripcion;
     private $dia;
     private $estado;
+    private $imagenRutina;
     
-     function __construct($idrutina, $descripción, $dia, $estado) {
+     function __construct($idrutina, $descripcion, $dia, $estado,$imagenRutina) {
        $this->idrutina = $idrutina;
-       $this->descripción = $descripción;
+       $this->descripcion = $descripcion;
        $this->dia = $dia;
        $this->estado = $estado;
+        $this->imagenRutina = $imagenRutina;
      }
     
      function setidrutina($idrutina){
@@ -20,11 +22,11 @@ class Rutina
      function getidrutina(){
        return $this->idrutina;
      } 
-     function setdescripción($descripción){
-       $this->descripción = $descripción;
+     function setdescripcion($descripcion){
+       $this->descripcion = $descripcion;
      } 
-     function getdescripción(){
-       return $this->descripción;
+     function getdescripcion(){
+       return $this->descripcion;
      } 
      function setdia($dia){
        $this->dia = $dia;
@@ -37,6 +39,12 @@ class Rutina
      } 
      function getestado(){
        return $this->estado;
+     }
+     function setimagenRutina($imagenRutina){
+       $this->imagenRutina = $imagenRutina;
+     } 
+     function getimagenRutina(){
+       return $this->imagenRutina;
      } 
 }
 

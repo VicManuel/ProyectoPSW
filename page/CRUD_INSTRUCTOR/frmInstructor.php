@@ -1,51 +1,104 @@
 
-<div class="overlay-container">
-			<div class="window-container zoomin">
-		<form class="reg-page" align="center">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="reg-header">            
-                        <h2>Registro de Instructor</h2>
-                    </div>
-				
 
-                    <div class="input-group margin-bottom-20">
-                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                        <input type="text" placeholder="Codigo" class="form-control" name="usuario">
-                    </div>                    
-                    <div class="input-group margin-bottom-20">
-                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                        <input type="text" placeholder="Nombre" class="form-control" name="contraseña">
+
+<div class="overlay-container">
+	<div class="window-container zoomin">
+		<form  align="left" action="CRUD_Instructor.php" method='post' enctype="multipart/form-data">
+				
+				
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		    <div class="reg-header">            
+                        <center><h2>Registro de Instructor</h2></center>
                     </div>
-		    <div class="input-group margin-bottom-20">
-                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                        <input type="text" placeholder="Apellido" class="form-control" name="dirección">
-                    </div>
-		    <div class="input-group margin-bottom-20">
-                        <span class="input-group-addon">Femenino<i class="fa fa-lock"></i></span>
-                        <input type="radio" placeholder="Sexo" class="form-control" name="telefono_text">
+		    
+		    <?php
+			/*include_once('InstructorCollector.php');
+			$InstructorCollectorObj= new InstructorCollector();
 			
-			    <span class="input-group-addon">Maculino<i class="fa fa-lock"></i></span>
-                        <input type="radio" placeholder="Sexo" class="form-control" name="telefono_text">
-                    </div>
-		    <div class="input-group margin-bottom-20">
-                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                        <input type="text" placeholder="Telefono" class="form-control" name="contraseña">
-                    </div>
-		    <div class="input-group margin-bottom-20">
-                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                        <input type="text" placeholder="Descripción" class="form-control" name="contraseña">
-                    </div>
-		   
-		      </br></br>
+			
+			foreach($InstructorCollectorObj->readInstructor() as $ObjInstructor){
+						
+			}*/
+		    ?>
+		  
+		 
+    <br /><br />
+    	<table width="200" border="0" align="center" >
+        <tr> <td rowspan="8"><img src="" width="200" height="200" title="" legend=""/></td></tr>
+ 
+  <tr>
+    <td><b>Codigo</b></td>
+    <td><input type="text" name="Codigo" value="" /></td>
+  </tr>
+  <tr>
+    <td><b>Nombre</b></td>
+	<td>
+    	<input type="text" name="Nombre" value="<?php echo $nombre ?>" />        
+    </td>
+  </tr>
+  <tr>
+    <td><b>Apellido</b></td>
+	<td>
+    	<input type="text" name="Apellido" value="" />        
+    </td>
+  </tr>
+  <tr>
+    <td><b>Sexo</b></td>
+    <td>
+    	   <select name="Sexo">
+		<option value="Femenino">Femenino</option>
+		<option value="Masculino">Masculino</option>
+		<option value="Otro">Otro</option>		
+	   </select>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Tipo de Telefono</b></td>
+    <td>
+    	   <select name="tipoTelefono">
+		<option value="Claro">Claro</option>
+		<option value="Movistar">Movistar</option>
+		<option value="CNT">Cnt</option>
+		<option value="Convencional">Convencional</option>		
+	   </select>
+    </td>
+  </tr>
+  
+   <tr>
+    <td><b>Telefono</b></td>
+	<td>
+    	<input type="text" name="Telefono" value="" />        
+    </td>
+  </tr>
+      
+    <tr>
+    <td><b>Comentario</b></td>
+	<td>
+    	<input rows="15" type="text" name="Comentario" value="" />        
+    </td>
+  </tr>
+     
+
+  
+
+  <tr><td colspan="3"><b>Subir Imagen de Rutina</b></td></tr>
+  <tr><td colspan="3"><input type="file" name="foto" /></td></tr>
+</table>
+</br></br>
                     <div class="row" align="center">
                         <div class="col-md-6">
-                            <input class="btn-u pull-right" type="submit" name="Eliminar" value="Eliminar"/>
-							<input class="btn-u pull-right" type="submit" name="Modificar" value="Modificar"/>
-							<input class="btn-u pull-right" type="submit" name="Grabar" value="Grabar"/>
-			    		    <input class="btn-u pull-right" type="reset" name="reset" value="Nuevo"/>
-						</div>
+                           <input class="btn-u pull-right" type="submit" name="Accion" id="Accion" value="Grabar"/>
+			   <input class="btn-u pull-right" type="submit" name="Accion" id="Accion" value="Eliminar"/>
+			   <input class="btn-u pull-right" type="submit" name="Accion" id="Accion" value="Modificar"/>
+			   <input class="btn-u pull-right" type="submit" name="Accion" id="Accion" value="Buscar"/>
+			   <input class="btn-u pull-right" type="reset" id="reset" value="Nuevo"/>
+                        </div>
                     </div>
-		</form>	
+                </form> 
 								<br/>
 							<span class="close">Cerrar</span>
 						</div>
 					</div>
+
+
+
